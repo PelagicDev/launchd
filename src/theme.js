@@ -17,4 +17,7 @@ export default {
     '5xl': '3rem',
     '6xl': '4rem',
   },
+  colors: {
+    green: '#008000',
+  },
 }

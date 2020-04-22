@@ -1,10 +1,18 @@
 import React from 'react'
+import { ThemeProvider } from '@chakra-ui/core'
+
+// import theme from './theme'
+import NavBar from './components/NavBar'
+import Launcher from './Launcher'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Testing</header>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <NavBar />
+        <Launcher />
+      </div>
+    </ThemeProvider>
   )
 }
 
