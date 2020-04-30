@@ -16,6 +16,8 @@ import {
   useDisclosure,
 } from '@chakra-ui/core'
 
+type Boat = { id: number; name: string }
+
 const BOATS = [
   { id: 1, name: "23' Clearwater" },
   { id: 2, name: "28' Regulator" },
@@ -29,7 +31,7 @@ const Launcher = () => {
 
   const { register, handleSubmit, errors } = useForm()
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data)
     onClose()
   }
